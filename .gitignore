@@ -1,0 +1,11 @@
+# Working outputs
+outputs/
+
+# Obsidian
+.obsidian/
+
+# macOS
+.DS_Store
+
+# MkDocs build
+site/
