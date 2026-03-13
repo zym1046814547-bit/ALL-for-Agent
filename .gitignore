@@ -9,3 +9,6 @@ outputs/
 
 # MkDocs build
 site/
+
+# Exported conversations
+exported-conversations/
