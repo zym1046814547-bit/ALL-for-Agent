@@ -6,35 +6,37 @@
 
 ---
 
-## 前置背景
-
-### 学习背景
+## 学习背景
 
 **User 请求**：分析 analysis_claude_code 及其 fork 项目，选择最好的项目下载。随后请求使用 coach skill 进行学习。
 
 Assistant 选择了 **First Principles Learning Coach** 的 **Project Mode**，引导学习 `learn-claude-code` 项目。
 
-### 项目总览
+---
 
-#### 核心命题
+## 项目总览
+
+### 核心命题
 
 > *"Bash is all you need — 一个 while 循环 + 一个工具 = 一个 Agent"*
 
 整个 12 个 Session 围绕这个最小循环做一件事 — **逐步添加一个机制，让简陋的循环逐渐具备 Claude Code 级别的能力**。
 
-#### 项目解决的核心问题
+### 项目解决的核心问题
 
 > Claude Code 看起来能力很强（多工具调度、Plan 模式、子 Agent、上下文压缩、多 Agent 协作…），但**这些能力的本质是什么？它们是如何一层一层叠加到一个最小循环上的？**
 
 回答：**从最小可行 Agent（一个 while + stop_reason 检测）出发，每次只加一个机制，12 步抵达完整多 Agent 系统**。
 
-### 起点诊断：认知锚点测试
+---
 
-#### 为什么先诊断
+## 起点诊断：认知锚点测试
+
+### 为什么先诊断
 
 在进入项目学习之前，需要知道学习者的认知锚点在哪里。这会帮助决定从哪个深度开始。
 
-#### 讨论
+### 讨论
 
 **问（Assistant）**：你能用自己的话描述一下，一个最基本的 AI Agent（比如 Claude Code）和普通的 LLM API 调用之间，最本质的区别是什么？
 
@@ -95,6 +97,8 @@ def agent_loop(messages):
 > LLM 训练时只见过两种角色：**user（外部输入）** 和 **assistant（自身推理）**。工具执行结果是**来自外部世界的信息**，所以自然应该放在 `user` 位置。这不是"欺骗"模型，而是**符合模型对信息来源的认知结构**。
 
 这也解释了为什么 Agent 循环如此简洁 — 它复用了 LLM 已有的对话范式，没有发明新协议。
+
+---
 
 ## Memory Anchor
 
