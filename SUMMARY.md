@@ -88,6 +88,7 @@
     * [Session 11 — 去中心化调度](5-project/Analysis-ClaudeCode/session_11.md)
     * [Session 12 — Worktree 文件系统隔离](5-project/Analysis-ClaudeCode/session_12.md)
     * [补充：Antigravity IDE Context 管理](5-project/Analysis-ClaudeCode/supplementary/antigravity_ide_context_management.md)
+  * [Qwen DeepResearch 抽象架构教学](5-project/QwenDeepResearch/ABSTRACT_ARCHITECTURE_TEACHING.md)
 * [附录](appendix/README.md)
   * [开源项目索引](appendix/open-source-project-index.md)
   * [术语表](appendix/glossary.md)
